@@ -10,7 +10,7 @@ This dining establishment goes by the name of "Anna's Uta Mane," which translate
 
 
 
-
+![Screenshot 2024-05-18 210935](https://github.com/Gandhisaanvi/Frontend-Project/assets/126311321/f2799f92-cf8d-43c4-ad0a-68aa15bd3866)
 
 
 
