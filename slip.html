@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Slip</title>
+    <link rel="stylesheet" href="styles3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Order Slip</h1>
+        <div id="orderDetails"></div>
+        <div id="totalBill"></div>
+        <a href="index.html" class="back-to-home"><i class="fas fa-arrow-left"></i></a>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const orderDetails = JSON.parse(localStorage.getItem('orderDetails'));
+            const orderDetailsDiv = document.getElementById('orderDetails');
+            const totalBillDiv = document.getElementById('totalBill');
+            
+            if (orderDetails && orderDetails.length > 0) {
+                const ul = document.createElement('ul');
+                let totalBill = 0;
+                
+                orderDetails.forEach(item => {
+                    const li = document.createElement('li');
+                    li.textContent = `${item.quantity} x ${item.foodItem} - ₹${item.price * item.quantity}`;
+                    ul.appendChild(li);
+                    totalBill += item.price * item.quantity;
+                });
+                
+                orderDetailsDiv.appendChild(ul);
+                totalBillDiv.textContent = `Total Bill: ₹${totalBill}`;
+            } else {
+                orderDetailsDiv.textContent = 'No items ordered.';
+            }
+        });
+    </script>
+</body>
+</html>

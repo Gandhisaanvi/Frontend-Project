@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna's Uta Mane</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+  
+<body>
+    <div class="container">
+
+        <h1>Anna's Uta Mane</h1>
+        <form id="orderForm" >
+            <label for="foodItem">Select Food Item:</label>
+            <select id="foodItem" name="foodItem">
+                <option value="Chow Chow Bath">Chow Chow Bath</option>
+                <option value="Idli Sambar">Idli Sambar</option>
+                <option value="Medu Vada">Medu Vada</option>
+                <option value="Set Dosa">Set Dosa</option>
+                <option value="Hyderabadi Chicken Biryani">Hyderabadi Chicken Biryani</option>
+                <option value="Bisibelebath">Bisibelebath</option>
+                <option value="Mango Chitranna">Mango Chitranna</option>
+                <option value="Veg Meals">Veg Meals</option>
+                <option value="Guntur Chicken">Guntur Chicken</option>
+                <option value="Chicken Ghee Roast">Chicken Ghee Roast</option>
+                <option value="Filter Coffee">Filter Coffee</option>
+                <option value="Ragi Mude">Ragi Mude</option>
+                <option value="Chicken Nati Biryani">Chicken Nati Biryani</option>
+                <option value="Non-Veg Thali">Non-veg Thali</option>
+                <option value="Lemon Soda">Lemon Soda</option>
+            </select>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+            <button type="button" onclick="addToCart()">Add to Cart</button>
+        </form>
+        <div id="cart">
+            <h2>Cart</h2>
+            <ul id="cartItems">
+            </ul>
+            <button type="button" onclick="placeOrder()">Place Order</button>
+        </div>
+    </div>
+    <a href="index.html" class="back-to-home"><i class="fas fa-arrow-left"></i></a>
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0,0.45))
+    ,url("rest.jpg");
+    background-size: cover;
+    background-position: center;
+    /* Adjust the blur radius as needed */
+    
+}
+.back-to-home {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+
+.back-to-home:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.back-to-home i {
+    font-size: 24px;
+}
+
+
+.container {
+   
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-image: linear-gradient(rgb(255, 116, 74) 30%,rgb(255, 217, 3) 100% );
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(255, 247, 0);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select, input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #291d1d;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    font-size:medium;
+    font-weight: bold;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #8b1000;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #ffe100;
+    background-image: linear-gradient(rgb(255, 8, 8) 40%,rgb(195, 159, 27) 100%);
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: larger;
+
+}
+
+button:hover {
+    background-color: #ffda0b;
+}
+
+#cart {
+    background-color: #ffc983;
+    padding: 20px;
+}
+
+#cartItems {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cartItems li {
+    margin-bottom: 10px;
+}
+
+#cartItems li span {
+    font-weight: bold;
+}

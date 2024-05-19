@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), 
+                url("food3.jpg") no-repeat;
+    background-size: cover;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+header {
+    background-color: #343a40;
+    background-image: linear-gradient(rgb(255, 77, 0) 30%,rgb(251, 255, 6) 100%);
+    text-align: center;
+    padding: 8px 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+.special-item {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(251, 255, 0);
+    text-align: center;
+}
+
+.special-item img {
+    width: 80%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.special-item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.special-item p {
+    font-size: 16px;
+    color: #666;
+}
+.back-to-home {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.back-to-home i {
+    font-size: 20px;
+}
+
+footer {
+    background-color: #343a40;
+
+     background-image: linear-gradient(rgb(255, 77, 0) 30%,rgb(255, 234, 0) 100%);
+    text-align: center;
+    padding: 20px 0;
+}
